@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally center */
+  justify-content: start; /* optional: agar top pe rakhna hai */
+  font-family: "Be Vietnam Pro", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(resources/background@2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+.heading-box h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  width: 700px; /* sirf content ke mutabiq width */
+  text-align: center;
+}
+.heading-box p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  width: 625px; /* sirf content ke mutabiq width */
+  text-align: center;
+}
+.contact-container {
+  width: 800px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+input,
+select,
+textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn {
+  padding: 15px;
+  background: #fff;
+  color: #4f46e5;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #e0e7ff;
+}
